@@ -10,6 +10,11 @@ public class TimeCounter : MonoBehaviour
     //時間を表示するText型の変数
     public Text timeText;
 
+    void Start()
+    {
+        countup = 0.0f;
+    }
+
     // Update is called once per frame
     void Update()
     {
