@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab0f83ece1fb4f2c91f262303d5938b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cnt: 20
+  Cnt: 40
 --- !u!114 &239961249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dangerCnt: 0
-  dangerLimit: 20
+  dangerLimit: 10
 --- !u!1 &472430347
 GameObject:
   m_ObjectHideFlags: 0
