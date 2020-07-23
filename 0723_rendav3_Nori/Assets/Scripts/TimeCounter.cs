@@ -5,10 +5,7 @@ using UnityEngine.UI;
 public class TimeCounter : MonoBehaviour
 {
     //カウントアップ
-    private float countup = 0.0f;
-
-    //タイムリミット
-    public float timeLimit = 5.0f;
+    public static float countup = 0.0f;
 
     //時間を表示するText型の変数
     public Text timeText;
@@ -21,10 +18,5 @@ public class TimeCounter : MonoBehaviour
 
         //時間を表示する
         timeText.text = countup.ToString("f2") + "秒";
-
-        if (countup >= timeLimit)
-        {
-            timeText.text = "Fin";
-        }
     }
 }

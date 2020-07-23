@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Result : TreeCount
+public class Result : TimeCounter
 {
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Text>().text = "結果は" + result + "秒でした";
+        GetComponent<Text>().text = "結果は" + countup.ToString("f2") + "秒でした";
     }
 
     // Update is called once per frame
