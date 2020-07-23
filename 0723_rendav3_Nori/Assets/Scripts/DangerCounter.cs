@@ -12,7 +12,7 @@ public class DangerCounter : MonoBehaviour
 {
     // カウント用変数
     public float dangerCnt = 0f;
-    public float dangerLimit = 20f;
+    public float dangerLimit = 10f;
 
     // クリックした時間保存用の変数
     double clickTimeAt;
@@ -58,6 +58,13 @@ public class DangerCounter : MonoBehaviour
 
             // クリックした時間を保存
             clickTimeAt = Time.time;
+
+            //カウントが10になったらゲームオーバー
+            if (dangerCnt >= 10)
+            {
+                SceneManager.LoadScene("GameOverScene");
+            }
+
         }
 
 
