@@ -11,7 +11,12 @@ public class TreeCount : MonoBehaviour
     public static int Cnt = 40;
     // 結果表示用変数
     public static int result;
-  
+
+    //void Start()
+    //{
+    //    Cnt = 40;
+    //}
+
     // フレーム毎に呼ばれる関数
     void Update()
     {
@@ -27,6 +32,7 @@ public class TreeCount : MonoBehaviour
 
         if (Cnt == 0)
         {
+            
             SceneManager.LoadScene("ResultScene");
         }
         
