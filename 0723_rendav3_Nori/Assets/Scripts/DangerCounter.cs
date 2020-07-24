@@ -37,7 +37,7 @@ public class DangerCounter : MonoBehaviour
     {
          
         //毎フレームごとにカウント減らす
-        dangerCnt -= Time.deltaTime;
+        dangerCnt -= Time.deltaTime * 3;
 
         //カウントはマイナスにはしない
         if (dangerCnt <= 0f)

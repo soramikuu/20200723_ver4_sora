@@ -36,7 +36,7 @@ public class DangerCounterBar : MonoBehaviour
     {
 
         //毎フレームごとにカウント減らす
-        dangerCnt -= Time.deltaTime;
+        dangerCnt -= Time.deltaTime * 3;
 
         slider.value = (float)dangerCnt / (float)dangerLimit;
 
