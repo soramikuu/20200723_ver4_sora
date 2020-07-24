@@ -13,6 +13,7 @@ public class TimeCounter : MonoBehaviour
     void Start()
     {
         countup = 0.0f;
+
     }
 
     // Update is called once per frame
