@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class TreeCount : MonoBehaviour
 {
     // カウント用変数
-    public int Cnt = 40;
+    public static int Cnt = 40;
     // 結果表示用変数
     public static int result;
-
+  
     // フレーム毎に呼ばれる関数
     void Update()
     {
@@ -25,7 +25,6 @@ public class TreeCount : MonoBehaviour
         //カウントをTextコンポーネントへ 
         this.GetComponent<Text>().text = "残り" + Cnt + "本";
 
-   
         if (Cnt == 0)
         {
             SceneManager.LoadScene("ResultScene");
